@@ -1,0 +1,133 @@
+.future {
+    position: absolute;
+    top: 15px;
+}
+
+.f-title {
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    border-bottom: 1px solid blue;
+    width: 30%;
+    h5 {
+        margin: 0;
+    }
+    span {
+        color: red;
+    }
+}
+
+.f-top,.f-down {
+    display: flex;
+    margin: 120px 30px 0;
+    justify-content: space-evenly;
+    flex-flow: row-reverse;
+    @media(min-width: 769px) {
+        flex-flow: row;
+    }
+}
+
+.f-l {
+    width: 30%;
+    color: red;
+    line-height: 40px;
+    letter-spacing: 5px;
+    text-align: center;
+    @media(min-width: 769px) {
+        width: 45%;
+    }
+    ul {
+    display: flex;
+    writing-mode: tb;
+    flex-direction: column;
+    @media(min-width: 769px) {
+        display: block;
+        writing-mode: initial;
+    }
+    }
+    li.l-logo-main {
+        font-size: 35px;
+    }
+    li.l-logo-sub {
+        font-size: 22px;
+        text-align: end;
+        @media(min-width: 769px) {
+            text-align: center;
+        }
+    }
+}
+
+.top-text {
+    width: 50%;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.f-r {
+    width: 40%;
+    .f-words {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        @media(min-width: 769px) {
+            flex-direction: row;
+        }
+    }
+    .words-p {
+        text-align: center;
+        p {
+            font-size: 45px;
+            color: blue;
+            @media(min-width: 769px) {
+                font-size: 45px;
+            }
+        }
+        span {
+            position: relative;
+            top: -10px;
+            font-size: 12px;
+        }
+    }
+    p.under {
+        text-align: end;
+        font-size: 15px;
+        margin-right: 10%;
+    }
+}
+
+.l-logo-main:before {
+    display: none;
+    @media(min-width: 769px) {
+        display: initial;
+        content: "”";
+        color: red;
+    }
+}
+
+.l-logo-main:after {
+    display: none;
+    @media(min-width: 769px) {
+        display: initial;
+        content: "”";
+        color: red;
+    }
+}
+
+.f-words:before {
+    display: none;
+    @media(min-width: 769px) {
+        display: initial;
+        content: "”";
+        color: blue;
+        font-size: 30px;
+    }
+}
+
+.f-words:after {
+    @media(min-width: 769px) {
+        display: initial;
+        content: "”";
+        color: blue;
+        font-size: 30px;
+    }
+}
+

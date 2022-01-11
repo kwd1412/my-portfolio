@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+.back-img {
+  display: none;
+}
+
+@media (min-width: 769px) {
+  .back-img {
+    display: block;
+  }
+}
+
+.profile {
+  position: relative;
+  top: 18px;
+}
+
+@media (min-width: 769px) {
+  .profile {
+    display: flex;
+  }
+}
+
+@media (min-width: 769px) {
+  .profile .picture {
+    width: 90%;
+    text-align: center;
+  }
+}
+
+.profile .picture .picture-pc {
+  display: none;
+}
+
+@media (min-width: 769px) {
+  .profile .picture .picture-pc {
+    display: initial;
+    width: 65%;
+    margin: auto;
+    border-radius: 5%;
+    box-shadow: 1px 1px 20px 5px cadetblue;
+  }
+}
+
+.profile .picture .picture-sp {
+  width: 100%;
+  margin: 10% auto;
+  border-radius: 5%;
+  box-shadow: 1px 1px 20px 5px cadetblue;
+}
+
+@media (min-width: 769px) {
+  .profile .picture .picture-sp {
+    display: none;
+  }
+}
+
+.profile .my-page {
+  margin-bottom: 50px;
+}
+
+@media (min-width: 769px) {
+  .profile .my-page {
+    width: 90%;
+    padding-right: 10%;
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+}
+
+.profile .my-page .p-title {
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  border-bottom: 1px solid blue;
+}
+
+.profile .my-page .p-title h5 {
+  margin: 0;
+}
+
+.profile .my-page .p-title span {
+  color: red;
+}
+
+.p-contents {
+  font-size: 15px;
+}
+
+.p-contents .p-name {
+  margin-bottom: 10px;
+}
+
+.p-contents .place {
+  margin-bottom: 10px;
+}
+
+.p-contents .p-text {
+  margin-bottom: 15px;
+  line-height: 22px;
+}
+
+.p-contents .p-text span {
+  color: red;
+}
+
+.skill-graph {
+  display: flex;
+  margin: 30px 0;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  background-color: cornsilk;
+}
+
+@media (min-width: 769px) {
+  .skill-graph {
+    width: 60%;
+  }
+}
+
+.skill-graph .graph-left {
+  font-family: "Constantia", sans-serif;
+  letter-spacing: 2px;
+}
+
+.skill-graph .graph-right {
+  margin-left: 20px;
+  letter-spacing: 5px;
+  color: red;
+}
+
+.p-name:after {
+  content: "\5DDD\6240\3000\5927\7A00\FF08\FF12\FF19\FF09";
+  margin-left: 10px;
+}
+
+.place:after {
+  content: "\4EAC\90FD\5E9C";
+  margin-left: 10px;
+}
+

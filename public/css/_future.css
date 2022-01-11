@@ -1,0 +1,176 @@
+@charset "UTF-8";
+
+.future {
+  position: absolute;
+  top: 15px;
+}
+
+.f-title {
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  border-bottom: 1px solid blue;
+  width: 30%;
+}
+
+.f-title h5 {
+  margin: 0;
+}
+
+.f-title span {
+  color: red;
+}
+
+.f-top,
+.f-down {
+  display: flex;
+  margin: 120px 30px 0;
+  justify-content: space-evenly;
+  flex-flow: row-reverse;
+}
+
+@media (min-width: 769px) {
+  .f-top,
+  .f-down {
+    flex-flow: row;
+  }
+}
+
+.f-l {
+  width: 30%;
+  color: red;
+  line-height: 40px;
+  letter-spacing: 5px;
+  text-align: center;
+}
+
+@media (min-width: 769px) {
+  .f-l {
+    width: 45%;
+  }
+}
+
+.f-l ul {
+  display: flex;
+  -ms-writing-mode: tb;
+      writing-mode: tb;
+  flex-direction: column;
+}
+
+@media (min-width: 769px) {
+  .f-l ul {
+    display: block;
+    -ms-writing-mode: initial;
+        writing-mode: initial;
+  }
+}
+
+.f-l li.l-logo-main {
+  font-size: 35px;
+}
+
+.f-l li.l-logo-sub {
+  font-size: 22px;
+  text-align: end;
+}
+
+@media (min-width: 769px) {
+  .f-l li.l-logo-sub {
+    text-align: center;
+  }
+}
+
+.top-text {
+  width: 50%;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.f-r {
+  width: 40%;
+}
+
+.f-r .f-words {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+@media (min-width: 769px) {
+  .f-r .f-words {
+    flex-direction: row;
+  }
+}
+
+.f-r .words-p {
+  text-align: center;
+}
+
+.f-r .words-p p {
+  font-size: 45px;
+  color: blue;
+}
+
+@media (min-width: 769px) {
+  .f-r .words-p p {
+    font-size: 45px;
+  }
+}
+
+.f-r .words-p span {
+  position: relative;
+  top: -10px;
+  font-size: 12px;
+}
+
+.f-r p.under {
+  text-align: end;
+  font-size: 15px;
+  margin-right: 10%;
+}
+
+.l-logo-main:before {
+  display: none;
+}
+
+@media (min-width: 769px) {
+  .l-logo-main:before {
+    display: initial;
+    content: "\201D";
+    color: red;
+  }
+}
+
+.l-logo-main:after {
+  display: none;
+}
+
+@media (min-width: 769px) {
+  .l-logo-main:after {
+    display: initial;
+    content: "\201D";
+    color: red;
+  }
+}
+
+.f-words:before {
+  display: none;
+}
+
+@media (min-width: 769px) {
+  .f-words:before {
+    display: initial;
+    content: "\201D";
+    color: blue;
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 769px) {
+  .f-words:after {
+    display: initial;
+    content: "\201D";
+    color: blue;
+    font-size: 30px;
+  }
+}
+

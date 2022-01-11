@@ -1,0 +1,108 @@
+.back-img {
+    display: none;
+    @media(min-width: 769px) {
+        display: block;
+    }
+}
+
+.profile {
+    position: relative;
+    top: 18px;
+    @media(min-width: 769px) {
+        display: flex;
+    }
+    .picture {
+        @media(min-width: 769px) {
+            width: 90%;
+            text-align: center;
+        }
+        .picture-pc{
+            display: none;
+            @media(min-width: 769px) {
+                display: initial;
+                width: 65%;
+                margin: auto;
+                border-radius: 5%;
+                box-shadow: 1px 1px 20px 5px cadetblue;
+            }
+        }
+        .picture-sp{
+                width: 100%;
+                margin: 10% auto;
+                border-radius: 5%;
+                box-shadow: 1px 1px 20px 5px cadetblue;
+            @media(min-width: 769px) {
+                display: none;
+            }
+        }
+    }
+    .my-page {
+        margin-bottom: 50px;
+        @media(min-width: 769px) {
+            width: 90%;
+            padding-right: 10%;
+            margin-top: 20px;
+            margin-bottom: 0;
+        }
+        .p-title {
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+            border-bottom: 1px solid blue;
+            h5 {
+                margin: 0;
+            }
+            span {
+                color: red;
+            }
+        }
+    }
+}
+
+.p-contents {
+    font-size: 15px;
+    .p-name {
+        margin-bottom: 10px;
+    }
+    .place {
+        margin-bottom: 10px;
+    }
+    .p-text {
+        margin-bottom: 15px;
+        line-height: 22px;
+        span {
+            color: red;
+        }
+    }
+}
+
+.skill-graph {
+    display: flex;
+    margin: 30px 0;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    background-color: cornsilk;
+    @media(min-width: 769px) {
+        width: 60%;
+    }
+    .graph-left {
+        font-family: "Constantia",sans-serif;
+        letter-spacing: 2px;
+    }
+    .graph-right {
+        margin-left: 20px;
+        letter-spacing: 5px;
+        color: red;
+    }
+}
+
+.p-name:after {
+    content: "川所　大稀（２９）";
+    margin-left: 10px;
+}
+
+.place:after {
+    content: "京都府";
+    margin-left: 10px;
+}
+

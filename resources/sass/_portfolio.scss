@@ -1,0 +1,70 @@
+.portfolio {
+    position: absolute;
+    top: 15px;
+}
+
+.pf-title {
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    border-bottom: 1px solid blue;
+    width: 30%;
+    h5 {
+        margin: 0;
+    }
+    span {
+        color: red;
+    }
+}
+
+.portfolio-page {
+    margin: 30px auto 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    justify-content: space-between;
+    i.tap {
+        font-size: 10px;
+        color: blue;
+        width: 100%;
+        text-align: end;
+        @media(min-width: 769px) {
+            display: none;
+        }
+    }
+}
+
+.pf-contents {
+    margin-bottom: 25px;
+    @media(min-width: 769px) {
+        width: 45%;        
+    }
+    img {
+        margin-bottom: 5px;
+        border: 2px solid rgba(0,0,0,0.2);
+        @media(min-width: 769px) {
+            margin-bottom: 10px;
+        }
+    }
+    .p-text {
+        font-size: 10px;
+        letter-spacing: 1px;
+        line-height: 16px;
+        text-decoration: underline;
+        @media(min-width: 769px) {
+            font-size: 13px;
+            line-height: 20px;
+            margin-top: 5px;
+            text-decoration: none;
+        }
+    }
+}
+
+.pf-contents img{
+  width: 100%;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+.pf-contents:hover img{
+  opacity: 0.4;
+  transition-duration: 0.3s;
+}

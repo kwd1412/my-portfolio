@@ -1,0 +1,179 @@
+@charset "UTF-8";
+
+.top {
+  display: flex;
+  height: 100vh;
+  position: relative;
+  top: 50px;
+}
+
+.t-left {
+  width: 30%;
+  height: 100%;
+  left: 5%;
+  position: fixed;
+}
+
+.t-title {
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+.t-title span {
+  color: red;
+}
+
+.t-right {
+  width: 70%;
+  position: relative;
+  left: 30%;
+}
+
+ul.serect {
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+ul.serect li {
+  margin: 50px 0;
+  border-bottom: 1px solid blue;
+  width: 40%;
+  color: black;
+}
+
+ul.serect li a {
+  color: black;
+}
+
+.top-contents {
+  margin-bottom: 20%;
+}
+
+.top-contents a {
+  color: #ffffff;
+}
+
+.scrolldown1 {
+  position: absolute;
+  left: 50%;
+  top: 80%;
+}
+
+.scrolldown1 span {
+  position: absolute;
+  left: -15px;
+  top: -15px;
+  color: black;
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+}
+
+.scrolldown1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 1px;
+  height: 30px;
+  background: red;
+  -webkit-animation: pathmove 1.4s ease-in-out infinite;
+          animation: pathmove 1.4s ease-in-out infinite;
+  opacity: 0;
+}
+
+@-webkit-keyframes pathmove {
+  0% {
+    height: 0;
+    top: 0;
+    opacity: 0;
+  }
+
+  30% {
+    height: 30px;
+    opacity: 1;
+  }
+
+  100% {
+    height: 0;
+    top: 50px;
+    opacity: 0;
+  }
+}
+
+@keyframes pathmove {
+  0% {
+    height: 0;
+    top: 0;
+    opacity: 0;
+  }
+
+  30% {
+    height: 30px;
+    opacity: 1;
+  }
+
+  100% {
+    height: 0;
+    top: 50px;
+    opacity: 0;
+  }
+}
+
+.btn {
+  border: none;
+}
+
+button.btn.btn-primary {
+  position: relative;
+  left: 15%;
+  font-size: 16px;
+  width: 20%;
+  bottom: 70px;
+  letter-spacing: 1px;
+  background-color: seagreen;
+}
+
+button.btn.btn-info {
+  position: relative;
+  left: 75%;
+  font-size: 16px;
+  width: 20%;
+  bottom: 70px;
+  letter-spacing: 1px;
+  background-color: seagreen;
+}
+
+button.btn.btn-dark {
+  position: relative;
+  left: 25%;
+  font-size: 16px;
+  width: 20%;
+  bottom: 70px;
+  letter-spacing: 1px;
+  background-color: seagreen;
+  border: 1px solid dodgerblue;
+}
+
+button.btn.btn-primary i:after {
+  content: "\25B6\25B6\25B6";
+  margin-left: 5px;
+  letter-spacing: 5px;
+}
+
+button.btn.btn-info i:after {
+  content: "\25B6\25B6\25B6";
+  margin-left: 5px;
+  letter-spacing: 5px;
+}
+
+button.btn.btn-dark i:before {
+  content: "\25C0\25C0\25C0";
+  margin-right: 5px;
+  letter-spacing: 5px;
+}
+
+.fadein {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 1.2s;
+}
+

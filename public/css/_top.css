@@ -1,0 +1,144 @@
+@charset "UTF-8";
+
+.top {
+  font-family: "BIZ UDP\660E\671D", sans-serif;
+  min-height: 300px;
+  position: fixed;
+}
+
+.top-section {
+  display: block;
+}
+
+@media (min-width: 769px) {
+  .top-section {
+    display: flex;
+  }
+}
+
+.t-header {
+  font-family: "Constantia", sans-serif;
+  position: relative;
+  top: 70px;
+  text-align: center;
+  letter-spacing: 2px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 769px) {
+  .t-header {
+    letter-spacing: 5px;
+    width: 100%;
+  }
+
+  .t-header h2 {
+    font-size: 30px;
+    letter-spacing: 3px;
+  }
+}
+
+.t-header .t-title span {
+  color: gold;
+}
+
+.t-header .serect {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.t-header .serect p {
+  margin: 20px;
+}
+
+.t-header .serect .serect-p span {
+  color: green;
+}
+
+.t-header .serect .serect-s span {
+  color: blue;
+}
+
+.t-header .serect .serect-f span {
+  color: red;
+}
+
+.top-contents {
+  font-family: "BIZ UDP\660E\671D", sans-serif;
+  position: absolute;
+  top: 300px;
+}
+
+.scrolldown1 {
+  position: absolute;
+  left: 50%;
+  height: 50px;
+  margin-top: 30px;
+}
+
+/*Scrollテキストの描写*/
+
+.scrolldown1 span {
+  position: absolute;
+  left: -15px;
+  top: -15px;
+  color: black;
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+}
+
+/* 線の描写 */
+
+.scrolldown1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 1px;
+  height: 30px;
+  background: red;
+  /*線の動き1.4秒かけて動く。永遠にループ*/
+  -webkit-animation: pathmove 1.4s ease-in-out infinite;
+          animation: pathmove 1.4s ease-in-out infinite;
+  opacity: 0;
+}
+
+/*高さ・位置・透過が変化して線が上から下に動く*/
+
+@-webkit-keyframes pathmove {
+  0% {
+    height: 0;
+    top: 0;
+    opacity: 0;
+  }
+
+  30% {
+    height: 30px;
+    opacity: 1;
+  }
+
+  100% {
+    height: 0;
+    top: 50px;
+    opacity: 0;
+  }
+}
+
+@keyframes pathmove {
+  0% {
+    height: 0;
+    top: 0;
+    opacity: 0;
+  }
+
+  30% {
+    height: 30px;
+    opacity: 1;
+  }
+
+  100% {
+    height: 0;
+    top: 50px;
+    opacity: 0;
+  }
+}
+
